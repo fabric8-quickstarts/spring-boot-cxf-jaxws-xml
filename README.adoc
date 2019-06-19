@@ -1,6 +1,6 @@
 == Spring-Boot Camel CXF JAXWS QuickStart
 
-This example demonstrates how you can use Apache CXF with Spring Boot
+This example demonstrates how you can use Apache CXF with Spring Boot(xml way to publish the JAXWS endpoint)
 based on a https://github.com/fabric8io/base-images#java-base-images[fabric8 Java base image].
 
 IMPORTANT: This quickstart can run in 2 modes: standalone on your machine and on Kubernetes / OpenShift Cluster
@@ -40,11 +40,11 @@ $ oc login -u developer -p developer
 $ oc new-project MY_PROJECT_NAME
 ----
 
-. Change the directory to the folder that contains the extracted quickstart application (for example, `my_openshift/spring-boot-camel-jaxws`) :
+. Change the directory to the folder that contains the extracted quickstart application (for example, `my_openshift/spring-boot-camel-jaxws-xml`) :
 +
 [source,bash,options="nowrap",subs="attributes+"]
 ----
-$ cd my_openshift/spring-boot-camel-jaxws
+$ cd my_openshift/spring-boot-camel-jaxws-xml
 ----
 
 . Build and deploy the project to the OpenShift cluster:
@@ -55,17 +55,17 @@ $ mvn clean -DskipTests fabric8:deploy -Popenshift
 ----
 
 . In your browser, navigate to the `MY_PROJECT_NAME` project in the OpenShift console.
-Wait until you can see that the pod for the `spring-boot-camel-jaxws` has started up.
+Wait until you can see that the pod for the `spring-boot-camel-jaxws-xml` has started up.
 
 == Accessing the CXF JAXRS endpoint
 
 When the example is running, a CXF JAXRS endpoint is available.
 
-If you run the example on a single-node OpenShift cluster, then the REST service is exposed at 'http://spring-boot-camel-jaxws-MY_PROJECT_NAME.OPENSHIFT_IP_ADDR.nip.io/service`.
+If you run the example on a single-node OpenShift cluster, then the REST service is exposed at 'http://spring-boot-camel-jaxws-xml-MY_PROJECT_NAME.OPENSHIFT_IP_ADDR.nip.io/service`.
 
 Notice: As it depends on your OpenShift setup, the hostname (route) might vary. Verify with `oc get routes` which hostname is valid for you.
 
-- <http://spring-boot-camel-jaxws-MY_PROJECT_NAME.OPENSHIFT_IP_ADDR.nip.io/service/hello?wsdl>
+- <http://spring-boot-camel-jaxws-xml-MY_PROJECT_NAME.OPENSHIFT_IP_ADDR.nip.io/service/hello?wsdl>
 will now display the generated WSDL.
 
 == Integration Testing
