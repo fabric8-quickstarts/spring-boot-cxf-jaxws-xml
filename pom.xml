@@ -16,7 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- dependency versions -->
-        <fuse.bom.version>7.6.0-SNAPSHOT</fuse.bom.version>
+        <fuse.bom.version>7.8.0.fuse-sb2-780007</fuse.bom.version>
 
         <!-- maven plugin versions -->
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
@@ -73,9 +73,15 @@
         </dependency>
         <dependency>
             <groupId>io.fabric8</groupId>
-            <artifactId>kubernetes-assertions</artifactId>
+            <artifactId>kubernetes-model</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.fabric8</groupId>
+            <artifactId>kubernetes-client</artifactId>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
 
