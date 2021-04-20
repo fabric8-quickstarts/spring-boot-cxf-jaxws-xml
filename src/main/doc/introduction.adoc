@@ -1,0 +1,4 @@
+== Spring-Boot Camel CXF JAXWS QuickStart
+
+This example demonstrates how you can use Apache CXF with Spring Boot(xml way to publish the JAXWS endpoint)
+based on a https://github.com/fabric8io/base-images#java-base-images[fabric8 Java base image].
