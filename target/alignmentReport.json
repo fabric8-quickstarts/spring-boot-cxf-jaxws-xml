@@ -1,0 +1,43 @@
+{
+  "executionRoot" : {
+    "groupId" : "io.fabric8.quickstarts.cxf.jaxws",
+    "artifactId" : "spring-boot-cxf-jaxws-xml",
+    "version" : "7.9.0.fuse-sb2-790045-redhat-00001",
+    "originalGAV" : "io.fabric8.quickstarts.cxf.jaxws:spring-boot-cxf-jaxws-xml:7.9.0.fuse-sb2-790045"
+  },
+  "modules" : [ {
+    "gav" : {
+      "groupId" : "io.fabric8.quickstarts.cxf.jaxws",
+      "artifactId" : "spring-boot-cxf-jaxws-xml",
+      "version" : "7.9.0.fuse-sb2-790045-redhat-00001",
+      "originalGAV" : "io.fabric8.quickstarts.cxf.jaxws:spring-boot-cxf-jaxws-xml:7.9.0.fuse-sb2-790045"
+    },
+    "properties" : {
+      "fuse.bom.version" : {
+        "oldValue" : "7.9.0.fuse-sb2-790064",
+        "value" : "7.9.0.fuse-sb2-790064-redhat-00001"
+      }
+    },
+    "managedPlugins" : { },
+    "managedDependencies" : {
+      "dependencies" : {
+        "org.jboss.redhat-fuse:fuse-springboot-bom:7.9.0.fuse-sb2-790064" : {
+          "groupId" : "org.jboss.redhat-fuse",
+          "artifactId" : "fuse-springboot-bom",
+          "version" : "7.9.0.fuse-sb2-790064-redhat-00001"
+        }
+      }
+    },
+    "plugins" : {
+      "org.jboss.redhat-fuse:spring-boot-maven-plugin:7.9.0.fuse-sb2-790064" : {
+        "groupId" : "org.jboss.redhat-fuse",
+        "artifactId" : "spring-boot-maven-plugin",
+        "version" : "7.9.0.fuse-sb2-790064-redhat-00001"
+      }
+    },
+    "profiles" : [ {
+      "profileId" : "java11",
+      "managedDependencies" : [ { } ]
+    } ]
+  } ]
+}
